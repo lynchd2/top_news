@@ -1,18 +1,19 @@
 class CNN
 	attr_reader :base_url
 	def initialize
-		@base_url = "http://www.cnn.com/"
-
+		@base_url = "http://www.cnn.com"
 	end
+
 	def get_news
 		links = []
-		page = HTTParty.get(@base_url + "us")
+		page = HTTParty.get(@base_url)
 		parse_page = Nokogiri::HTML(page)
-		parse_page.css("h3").css(".cd__headline").css("a").each do |headline|
-			headline.attributes.each do |k,v|
-				links << "http://www.cnn.com" + v.value
-			end
-		end
-		links
+		parse_page.css("section")
+		# .each do |headline|
+		# 	headline.attributes.each do |k,v|
+		# 		links << "http://www.cnn.com" + v.value
+		# 	end
+		# end
+		# links
 	end
 end
