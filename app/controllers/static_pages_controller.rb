@@ -4,5 +4,6 @@ class StaticPagesController < ApplicationController
   	@guardian = Guardian.new.get_news
   	@npr = Npr.new.get_news
   	@bbc = Bbc.new.get_news
+  	@upi = Upi.new.get_news
   end
 end

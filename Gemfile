@@ -7,6 +7,8 @@ gem 'mechanize'
 gem 'httparty'
 gem "watir"
 gem "selenium-webdriver"
+gem 'angularjs-rails'
+gem 'angular_rails_csrf'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
