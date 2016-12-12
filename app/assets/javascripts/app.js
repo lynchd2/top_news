@@ -1,4 +1,4 @@
-var app = angular.module( 'app', ['ui.router', 'restangular']);
+var app = angular.module('app', ['ui.router', 'restangular']);
 
 
 app.config([
@@ -13,14 +13,16 @@ app.config([
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise("/");
-
+  
   $stateProvider
 
-  .state("news", {
-  		url: "",
-  		templateUrl: '/news/index.html',
+    .state ('news', {
+      url: '/',
+      templateUrl: '/news/index.html',
       controller: 'NewsIndexCtrl', 
-  })
+    })
+
+    $urlRouterProvider.otherwise("/");
+
 
 }])

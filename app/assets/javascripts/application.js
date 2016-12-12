@@ -11,10 +11,9 @@
 // about supported directives.
 //
 //= require angular
-//= require angular-ui-router.min.js
-//= require underscore.min.js
-//= require restangular.min.js
+//= require angular-ui-router.min
+//= require underscore.min
+//= require restangular.min
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .

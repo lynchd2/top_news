@@ -1,4 +1,4 @@
-app.controller("NewsIndexCtrl", ["$scope", function($scope, ) {
+app.controller("NewsIndexCtrl", ["$scope", function($scope) {
 
 	$scope.test = "test";
 

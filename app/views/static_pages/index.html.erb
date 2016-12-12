@@ -1,11 +1,8 @@
 <h1>StaticPages#index</h1>
 <p>Find me in app/views/static_pages/index.html.erb</p>
-<%= @upi %>
 
-<%= content_for :angular_app do %>
-  ng-app="app"
+<%= content_for(:angular_app) do  %>
+  ng-app = "app"
 <% end %>
-
-
-<div ui-view="news"></div>
 <div ui-view></div>
+<div ui-view="news"></div>
